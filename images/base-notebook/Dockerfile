@@ -28,7 +28,7 @@ RUN yum install -y curl wget java-headless bzip2 gnupg2 sqlite3 \
     && rm Miniconda3-4.2.12-Linux-x86_64.sh \
     && export PATH=/opt/conda/bin:$PATH \
     && yum install -y gcc gcc-c++ glibc-devel \
-    && /opt/conda/bin/conda install --quiet --yes python=3.5 'nomkl' \
+    && /opt/conda/bin/conda install --quiet --yes python=2.7 'nomkl' \
 			    'ipywidgets=5.2*' \
 			    'matplotlib=1.5*' \
 			    'scipy=0.17*' \
